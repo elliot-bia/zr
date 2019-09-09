@@ -1,0 +1,465 @@
+p{margin: 0}
+/*遥测仪-A*/
+.dx-banner-one .dx-banner-img01{
+    position: absolute;
+    left: 0;
+    top: 266px;
+}
+.dx-banner-one .dx-banner-img02{
+    position: absolute;
+    right: 8%;
+    top: 356px;
+}
+.dx-banner-one .dx-banner-text{
+    text-align: center;
+    position: absolute;
+    left: 42%;
+    top: 265px;
+    text-shadow: 1px 1px #000;
+}
+.dx-banner-one .dx-btn a{
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    width: 50px;
+    height: 40px;
+    -webkit-transform: skew(-45deg);
+    -moz-transform: skew(-45deg);
+    -o-transform: skew(-45deg);
+    background: red;
+    position: absolute;
+    left: 903px;
+    top: 516px;
+}
+.dx-banner-one .dx-btn a>p{
+    display: inline-block;
+    -webkit-transform: skew(45deg);
+    -moz-transform: skew(45deg);
+    -o-transform: skew(45deg);
+}
+.dx-banner-one .dx-btn a>span{
+    display: inline-block;
+    -webkit-transform: skew(45deg);
+    -moz-transform: skew(45deg);
+    -o-transform: skew(45deg);
+}
+.dx-banner-one .dx-btn .right{
+    left: 953px;
+    background: #000;
+    color: #fff;
+}
+/*侧边导航栏*/
+.dx-banner-pager{
+    position: absolute;
+    right: 36px;
+    top: 500px;
+}
+.dx-banner-pager a{
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #bdbdbd;
+    margin-bottom: 7px;
+    transform: rotate(45deg);
+}
+.dx-banner-pager .active{
+    background-color: #eb0114;
+}
+
+/*遥测仪-B*/
+.dx-banner-two .dx-banner-img{
+    width: 33%;
+    margin: 3% 0 4% 22%;
+    position: relative;
+}
+.dx-banner-two .dx-banner-title {
+    width: 100%;
+    text-align: center;
+}
+.dx-banner-two .dx-banner-title>.iconfont{
+    cursor: pointer;
+}
+.dx-banner-two .dx-banner-mark a{
+    display: block;
+    width: 28px;
+    height: 18px;
+    background: url("../images/mark02.png") no-repeat center;
+    position: absolute;
+    left: 49%;
+    top: 180px;
+}
+.dx-banner-two .dx-banner-mark .mark02{
+    left: 54%;
+}
+.dx-banner-two .dx-banner-mark .mark03{
+    top: 198px;
+    left: 58%;
+}
+.dx-banner-two .dx-banner-mark .mark04{
+    top: 230px;
+    left: 77%;
+}
+.dx-banner-two .dx-banner-mark .mark04:after{
+    content: "";
+    width: 200px;
+    border: 1px dashed #ff0000;
+    position: absolute;
+    left: 173%;
+    bottom: 63%;
+}
+.dx-banner-two .dx-banner-mark .mark05{
+    top: 359px;
+    left: 94%;
+}
+.dx-banner-two .dx-banner-img-unit{
+    position: absolute;
+    right: -50%;
+    top: 0;
+}
+.dx-banner-two .dx-banner-img-unit:before{
+    content: "";
+    width: 30px;
+    height: 26px;
+    background: url("../images/mark01.png") no-repeat center;
+    position: absolute;
+    left: -23%;
+    top: 41%;
+}
+.dx-banner-two .dx-banner-img-unit:after{
+    content: "";
+    height: 142px;
+    border: 1px dashed #ff0000;
+    position: absolute;
+    left: -15%;
+    top: 62%;
+}
+.dx-banner-two .dx-btn .left{
+    position: absolute;
+    top: 44%;
+    left: 19%;
+}
+.dx-banner-two .dx-btn .right{
+    position: absolute;
+    top: 44%;
+    right: 19%;
+}
+.dx-banner-two .dx-parameters .parameter{
+    width: 25%;
+    float: left;
+}
+.dx-banner-two .dx-parameters .parameter .number {
+    font-family: "Helvetica";
+    font-size: 50px;
+    color: #fff;
+    margin-right: 18px;
+}
+.dx-banner-two .dx-parameters .parameter .explain{
+    padding-top: 12px;
+}
+.dx-banner-two .dx-parameters .parameter .explain .units{
+    font-size: 14px;
+    color: #fff;
+}
+.dx-banner-two .dx-parameters .parameter .explain .name{
+    font-size: 16px;
+    color: #666;
+}
+/*遥测仪-C*/
+.dx-banner-three .dx-banner-title{
+    position: absolute;
+    /*left: 25%;*/
+    top: 23%;
+    left: 50%;
+    margin-left: -615px;
+}
+.dx-banner-three .dx-banner-title>h3{
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 138px;
+}
+.dx-banner-three .dx-banner-title .list .content{
+    display: inline-block;
+    margin-right: 226px;
+}
+.dx-banner-three .dx-banner-title .list .last{
+    margin-right: 0;
+}
+.dx-banner-three .dx-banner-title .list .content .text{
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+/*.dx-banner-three .dx-banner-title .list .content .text:hover{*/
+    /*color: #eb0114;*/
+/*}*/
+/*.dx-banner-three .dx-banner-title .list .content .pic:hover .building,*/
+/*.dx-banner-three .dx-banner-title .list .content .pic:hover .pipeline,*/
+/*.dx-banner-three .dx-banner-title .list .content .pic:hover .gas-station,*/
+/*.dx-banner-three .dx-banner-title .list .content .pic:hover .transport-cart{*/
+    /*display: none;*/
+/*}*/
+/*.dx-banner-three .dx-banner-title .list .content .pic:hover .building-hover,*/
+/*.dx-banner-three .dx-banner-title .list .content .pic:hover .pipeline-hover,*/
+/*.dx-banner-three .dx-banner-title .list .content .pic:hover .gas-station-hover,*/
+/*.dx-banner-three .dx-banner-title .list .content .pic:hover .transport-cart-hover{*/
+    /*display: block;*/
+/*}*/
+
+/*遥测仪-D*/
+.dx-banner-four .dx-banner-mark a{
+    display: block;
+    width: 28px;
+    height: 18px;
+    background: url("../images/mark02.png") no-repeat center;
+    position: absolute;
+    left: 12%;
+    top: 59%;
+}
+.dx-banner-four .dx-banner-mark .mark02{
+    left: 23%;
+    top: 76%;
+}
+.dx-banner-four .dx-banner-mark .mark03{
+    left: 53%;
+    top: 76%;
+}
+.dx-banner-four .dx-banner-mark .mark04{
+    left: 44%;
+    top: 65%;
+}
+.dx-banner-four .dx-banner-mark .mark05{
+    left: 69%;
+    top: 61%;
+}
+.dx-banner-four .dx-banner-mark .mark05:after{
+    content: "";
+    width: 240px;
+    border: 1px dashed #ff0000;
+    position: absolute;
+    left: 173%;
+    bottom: 63%;
+}
+.dx-banner-four .dx-banner-img-unit{
+    position: absolute;
+    right: -83%;
+    top: 26%;
+}
+.dx-banner-four .dx-banner-img-unit:before{
+    content: "";
+    width: 30px;
+    height: 26px;
+    background: url("../images/mark01.png") no-repeat center;
+    position: absolute;
+    left: -23%;
+    top: 41%;
+}
+.dx-banner-four .dx-banner-img-unit:after{
+    content: "";
+    height: 146px;
+    border: 1px dashed #ff0000;
+    position: absolute;
+    left: -15%;
+    top: 62%;
+}
+.dx-banner-four .dx-banner-title{
+    position: absolute;
+    left: 47%;
+    top: 13%;
+}
+
+/*遥测仪-E*/
+.dx-banner-five .dx-banner-img{
+    position: absolute;
+    left: 47%;
+}
+.dx-banner-five .dx-banner-title {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 125px;
+}
+.dx-banner-five .dx-banner-title>.iconfont{
+    cursor: pointer;
+}
+.dx-banner-five .dx-parameters{
+    position: absolute;
+    left: 33%;
+    bottom: 14%;
+}
+.dx-banner-five .dx-parameters .parameter{
+    display: inline-block;
+    margin-right: 210px;
+    text-align: center;
+}
+.dx-banner-five .dx-parameters .parameter .p{
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+}
+.dx-banner-five .dx-parameters .car{
+    position: relative;
+}
+.dx-banner-five .dx-parameters .car:before,
+.dx-banner-five .dx-parameters .car:after{
+    /*content: "";*/
+    width: 114px;
+    height: 1px;
+    background-color: #e6e7e9;
+    position: absolute;
+    left: -267%;
+    top: 37%;
+}
+.dx-banner-five .dx-parameters .car:after{
+    left: 203%;
+}
+.dx-banner-five .dx-more{
+    display: block;
+    position: absolute;
+    left: 48%;
+    bottom: 5.8%;
+    text-align: center;
+    color: #eb0114;
+}
+.dx-banner-five .dx-more a{
+    display: block;
+    color: #eb0114;
+}
+.dx-banner-five .dx-more .iconfont{
+    transform: rotate(90deg);
+}
+
+.header,
+.header-hover{
+    transition: background .2s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+.do-sub-nav-w{
+    animation: fadeInUp .25s;
+    text-align: center;
+}
+/*激光甲烷遥测仪更多2*/
+.dx-more-content .pic{
+    width: 984px;
+    margin: 15% auto 0;
+}
+.dx-banner-title.title-sub{
+    top: 58%;
+}
+@media (max-width: 1440px) {
+    .dx-bn-img2 {
+        right: 5%;
+    }
+    .dx-banner-one .dx-banner-text {
+        top: 265px;
+    }
+    .dx-banner-one .dx-banner-text {
+        left: 39%;
+    }
+}
+.dx-banner-one .dx-banner-text{
+    z-index: 5;
+    top: 10%;
+    margin-left: 15%;
+    transform: translateX(-50%);
+    width: 55%;
+}
+/*20170402*/
+/*.dk-slide-a a{*/
+    /*display: block;*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*width: 40%;*/
+    /*padding-top: 25%;*/
+    /*margin: -10% 0 0 -20%;*/
+/*}*/
+.dk-col{
+    float: left;
+}
+.dk-col-p{
+    width: 458px;
+    padding:56px 0 0 40px;
+}
+@media (max-width: 1366px) {
+    .dk-col{
+        max-width: 55%;
+    }
+    .dk-col-p{
+        max-width: 45%;
+        padding: 20px;
+    }
+}
+.dk-jg-svg{
+    width: 58.59375%;
+    margin:  auto ;
+    padding-top: 6%;
+}
+.dk-img-word1{
+    /*text-align: right;*/
+    color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: -14%;
+    left: 45%;
+    font-size: 16px;
+}
+.dk-img-word2{
+    /*text-align: right;*/
+    color: #333;
+    position: absolute;
+    right: 20%;
+    bottom: -5%;
+    left: 30%;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+        padding: 0 0;
+    }
+    .dx-banner-one .dx-banner-text {
+        position: static;
+    }
+    .dk-img-word1 {
+        top: 50%;
+        width: 72%;
+        left: 10%;
+        font-size: 12px;
+    }
+    .dk-img-word2 {
+        left: 19%;
+        font-size: 12px;
+    }
+    .dy-details-main .details-main-top{
+        overflow: scroll;
+    }
+}
+@media (max-width: 768px) {
+    .dx-banner-one .dx-banner-text {
+        z-index: 5;
+        top: 10%;
+        margin-left: 48% !important;
+        transform: translateX(-50%);
+        width: 100% !important;
+    }
+
+    .dk-img-word1 {
+        width: 85%;
+    }
+    .dx-slide1 {
+        margin-top: 46px;
+    }
+}

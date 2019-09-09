@@ -1,0 +1,305 @@
+//pc优先所以，媒体查询均采用max前缀
+.x-div-2,.x-div-3,.x-div-5,.x-div-4{
+  h1{
+    font-size: 24px;
+    margin: 0;
+    padding: 5% 0;
+    text-align: center;
+  }
+}
+.x-div-2{
+  background-color: #e6e6e6;
+}
+.x-div-2,.x-div-3{
+  .num-group-jizhan{
+    border-right: 2px solid #a4a4a4;
+    margin-top: 5%;
+    margin-bottom: 10px;
+    h3{
+      margin: 0;
+    }
+  }
+  .num-group-jizhan:last-of-type{
+    border-right: none;
+  }
+  .pic-0{
+    width: 80vw;
+    height: auto;
+    max-height:60% ;
+    overflow: hidden;
+    margin: 0 auto 5vh;
+    >img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.x-div-4{
+  position: relative;
+  background: url("../images/banner-laser-E.jpg");
+  background-size: cover;
+  background-position: center;
+  .top-image{
+    position: absolute;
+    top:0;
+    left: 15vw;
+    width: 18vw;
+    max-width: 300px;
+  }
+  .images{
+    padding-top: 4%;
+    margin: 0 auto;
+    width: 80%;
+    >img{
+      width: 33%;
+      float: left;
+    }
+    >img:nth-of-type(1){
+      margin-left: 80px;
+    }
+    >img:nth-of-type(2){
+      margin-left: -40px;
+    }
+    >img:nth-of-type(3){
+      margin-left: -40px;
+    }
+  }
+  .content1{
+    margin: 0 auto;
+    width: 400px;
+    position: relative;
+    .text-1{
+      width: 100%;text-align: left;font-size: 24px;margin-bottom: 25px;
+    }
+    .text-2{
+      width: 100%;text-align: left;font-size: 16px;margin-bottom: 25px;margin-left: 45px;
+      b{
+        font-size: 20px;
+      }
+    }
+    .text-3{
+      width: 100%;text-align: right;font-size: 16px;margin-bottom: 25px;margin-left: 45px;
+    }
+  }
+}
+.x-div-5{
+  position: relative;
+  background: url("../images/banner-bg-5.jpg");
+  background-size: cover;
+  background-position: bottom;
+  h1{
+    color: #FFFFFF;
+    padding-top: 6vh;
+    padding-bottom: 0;
+  }
+  .images{
+    position: relative;
+    width: 600px;
+    height: 450px;
+    margin: 16% auto 0;
+    >div{
+      position: absolute;
+    }
+    .pic-0{
+      width: 100%;
+      height: 100%;
+    }
+    .pic-1,.pic-2,.pic-3,.pic-4{
+      width: 260px;
+      height: 260px;
+      >img{
+        width: 100%;
+      }
+      >p{
+        display: block;
+        margin-top: 15px;
+        color: #FFFFFF;
+      }
+    }
+    .pic-1{
+      left: ~"calc( 100% + 35px)";
+      top:-13vh;
+    }
+    .pic-2{
+      top:-13vh;
+      right: ~"calc( 100% + 35px)";
+    }
+    .pic-3{
+      bottom: -5vh;
+      left: ~"calc( 100% + 35px)";
+    }
+    .pic-4{
+      bottom: -5vh;
+      right: ~"calc( 100% + 35px)";
+    }
+
+  }
+}
+.x-div-6{
+  .table-list{
+    width:27%;float:left;margin-left:30px;padding: 0px 20px 0px 20px;
+  }
+}
+//笔记本设备 包含 1440x900 和 1366x768 这两个设备
+@media screen and (max-width: 1440px) and (max-height: 900px){
+  .images{
+    margin: 5% auto 0;
+  }
+  .pic-1{
+    left: ~"calc( 100% + 35px)";
+    top:-60px;
+  }
+  .pic-2{
+    top:-60px;
+    right: ~"calc( 100% + 35px)";
+  }
+  .pic-3{
+    bottom: -60px;
+    left: ~"calc( 100% + 35px)";
+  }
+  .pic-4{
+    bottom: -60px;
+    right: ~"calc( 100% + 35px)";
+  }
+
+}
+//处于竖屏的平板设备，处于横屏 可以当作笔记本设备处理
+@media screen and (orientation: portrait) and ( max-width: 1024px){
+
+}
+//竖屏设备
+
+@media all and (orientation: landscape)  and (max-height: 700px){
+  .x-div-5{
+    .images{
+      margin: 6% auto 0;
+      .pic-1,.pic-2,.pic-3,.pic-4{
+        width: 220px;
+        height: 200px;
+      }
+      .pic-1,.pic-2{
+        top: -10vh;
+      }
+      .pic-3,.pic-4{
+        bottom: 5vh;
+      }
+    }
+  }
+}
+@media all and (orientation: portrait) {
+  .x-div-1{
+    .bg-xunjian{
+      display: none;
+      background-image: none;
+    }
+    height: auto;
+  }
+  .x-div-4{
+    height: 60vh;
+  }
+  .x-div-2,.x-div-3{
+    height: 40vh;
+    .pic-0{
+      margin-bottom: 2vh;
+    }
+  }
+  .x-div-4{
+    .images{
+      width: 100%;
+      >img:nth-of-type(1) {
+        margin-left: 0;
+      }
+      >img:nth-of-type(2) {
+        margin-left: 0;
+      }
+      >img:nth-of-type(3) {
+        margin-left: 0;
+      }
+    }
+    .top-image{
+
+    }
+    .content1{
+      margin: 0 0 0 33vw;
+    }
+  }
+  .x-div-5{
+    background-image: url("../images/xunjian/div-5-bg-mobile.jpg");
+    .images{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:center;
+      width: 80%;
+      margin: 10% auto 0;
+      .pic-0,.pic-1,.pic-2,.pic-3,.pic-4{
+        position: relative;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+      }
+      .pic-0{
+        width: 100%;
+        height: auto;
+        margin-bottom: 4%;
+      }
+      .pic-1,.pic-2,.pic-3,.pic-4{
+        width: 50%;
+        height: auto;
+        p{
+          margin-top: 5px;
+          font-size: 16px;
+        }
+      }
+      .pic-1,.pic-3{
+        padding-right: 5%;
+      }
+      .pic-2,.pic-4{
+        padding-left: 5%;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 767px){
+  .x-div-4{
+    .top-image{
+      left: 5vw;
+    }
+    .content1{
+      width: auto;
+      margin-left: 3vw;
+      .text-1{
+        margin-left: 23vw;
+      }
+      .text-2,.text-3{
+        float: right;
+        margin-right: 3%;
+      }
+    }
+  }
+  .x-div-2,.x-div-3{
+    .pic-0{
+      margin-bottom: 5vh;
+    }
+    .num-group-jizhan{
+      h3{
+        font-size: 3vw;
+      }
+    }
+  }
+
+  .x-div-6{
+    .table-list{
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (width: 1024px)  and ( height: 1336px){
+  .x-div-5{
+    height: 150vh;
+  }
+}

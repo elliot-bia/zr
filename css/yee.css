@@ -1,0 +1,814 @@
+/**
+        768px作为手机与pc分界线
+        768px以下作为手机（包括768）
+        平板作为手机处理
+ */
+.yee-none{
+    display: none;
+}
+.yee-content{
+    /*
+        nothing is everything!
+    */
+    min-height: 100vh;
+
+    /*
+            fuck header bar
+     */
+    padding-top: 70px;
+}
+@media (max-width: 800px){
+    /*
+            fuck header bar x2
+     */
+    .yee-content{
+        padding-top: 46px;
+    }
+}
+.yee-part p{
+    text-indent: 2em;
+    line-height: 2em;
+    margin-top: 1em;
+    color: #404d5b;
+    font-weight: 500;
+    font-size: 1.05em;
+    font-family: "Microsoft YaHei","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif;
+}
+.yee-part img{
+    max-height: 300px;
+    max-width: 100%;
+    margin: 20px 20px 20px 0;
+}
+.yee-section1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-animation-name: yee-section1-a;
+    animation-name: yee-section1-a;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear
+}
+.yee-portrait{
+    display: none;
+}
+@media all and (orientation: portrait){
+    .yee-portrait{
+        display: block;
+    }
+}
+@media (max-width: 800px){
+    .yee-section1{
+        top: 60px;
+        animation-name:none;
+        -webkit-transform: translateX(-50%) translateY(0);
+        transform: translateX(-50%) translateY(0);
+    }
+}
+@keyframes yee-section1-a{
+    40%{ transform: translateX(-50%) translateY(-60%); }
+    100%{ transform: translateX(-50%) translateY(-50%); }
+}
+.yee-center{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.yee-relative{
+    position: relative;
+}
+.yee-left-g:before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+    border-left: 1px solid #dadada;
+    border-top: 1px solid #dadada;
+}
+.yee-left-g:after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 40px;
+    height: 40px;
+    border-right: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+}
+.yee-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+    background: url("../images/banner-bg-2.jpg") no-repeat;
+    background-size: cover;
+}
+
+.yee-section4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.yee-section4-mobile{
+    height: 100%;
+    width: 100%;
+    background: url("../images/product/antenna-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.yee-section4-img{
+    width: 450px;
+    position: relative;
+    margin-left: 120px;
+}
+.yee-section4-left{
+    position: relative;
+    width: 450px;
+    height: 500px;
+    background: url("../images/background/paopao2.png");
+    background-size: cover;
+    background-position: center;
+}
+.yee-section4-text{
+    display:inline-block;
+    padding:8px 15px;
+    font-size:25px;
+    border: 2px solid #2d2d2d;
+    border-radius: 10px;
+    color:#FFF;
+}
+
+.yee-section5{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    bottom: 140px;
+    justify-content:center;
+}
+.yee-section5-bg .title{
+    border: 2px solid #FFF;
+    position: absolute;
+    right: 25%;
+    top:10%;
+    color:#FFFFFF;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 24px;
+}
+.yee-section5-bg{
+    background: url("../images/index/slide01.jpg") no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.yee-section5-left,.yee-section5-right{
+    width: 400px;
+    height: 400px;
+    margin: 0 55px;
+}
+.yee-section5-left h3{
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+.yee-section5-left img{
+    width: 330px;
+    height: 330px;
+}
+.yee-section5-right{
+    display: flex;align-items:center;
+}
+
+.yee-section5-right p{
+    text-align: left;
+    font-size: 22px;
+    color: #FFF;
+}
+
+@media screen  and (orientation: portrait){
+    .yee-section5-bg{
+        background-image: url("../images/index/slide01-mobile.jpg");
+    }
+    .yee-section5-bg .title{
+        height: 80px;
+        padding-top: 20px;
+        position: static;
+        border: none;
+    }
+    .yee-section5{
+        height:calc( 100% - 80px);
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        padding-bottom: 25px;
+        position: absolute;
+        bottom: 0;
+    }
+    .yee-section5-left,.yee-section5-right{
+        width: 80vw;
+        height: auto;
+        margin: 0 auto;
+    }
+    .yee-section5-left{
+        text-align: center;
+    }
+    .yee-section5-left img{
+        width: 40vh;
+        height: auto;
+    }
+    .yee-section5-left h3{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .yee-section5-right{
+        display: block;
+        line-height: 28px;
+        padding-top: 5vh;
+        width: 40vh;
+    }
+    .yee-section5-right p {
+        font-size: 16px;
+    }
+}
+.yee-section7-left,.yee-section7-right{
+    width: 49%;
+    text-align: left;
+}
+.yee-section7-left{
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+.yee-section7-right{
+    position: absolute;
+    top: 120px;
+    right: 0;
+}
+.yee-section7-left img,.yee-section7-right img{
+    width: 25vw;
+}
+.yee-section7-text{
+    width: 420px;
+    margin:20px auto;
+}
+.yee-section7-text p{
+    font-size: 1.2em;
+}
+
+.yee-example-slider img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+.yee-core-left{
+    width: 60%;
+    float: left;
+}
+.yee-core-right{
+    width: 40%;
+    float: left;
+}
+.yee-core-right img{
+    float: left;
+}
+.yee-core-left{
+    position: relative;
+}
+.yee-core-left>div{
+    color: #FFF;
+    display: inline-block;
+    width: 40%;
+    height: 200px;
+    float: right;
+    padding: 25px;
+}
+.yee-core-left h3{
+    margin: 0;
+    color: #FFF;
+    line-height: 66px;
+    font-size: 30px;
+    border-bottom: 1px solid #AAA;
+}
+.yee-core-left p{
+    color: rgba(225,225,225,.4);
+    line-height: 30px;
+    font-size: 16px;
+
+}
+.yee-core-m1{
+    top:0px;
+    left: -200px;
+}
+.yee-core-m2{
+    top:0px;
+    right: -200px;
+}
+.yee-core-m3{
+    height: 243px;
+}
+.yee-core-m4{
+    height: 243px;
+}
+/*页面开始*/
+.yee-example{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 100%;
+    background: url("../images/background/002.jpg") no-repeat;
+    background-size: cover;
+}
+.yee-example-img{
+    position: relative;
+    width: 60%;
+    float: left;
+    height: 500px;
+    overflow: hidden;
+}
+.yee-example-img h3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #FFF;
+    background: rgba(0,0,0,0.3);
+    margin: 0;
+    padding: 15px;
+}
+.yee-example-img img{
+    width: 100%;
+}
+.yee-example-text{
+    background: #f2f2f2;
+    float: left;
+    width: 38.6%;
+    margin-right: -5.6%;
+    position: relative;
+    z-index: 3;
+    text-align: left;
+    padding: 80px 60px 110px;
+    height: 500px;
+}
+.yee-example-text p{
+    line-height: 2em;
+    text-indent: 2em;
+}
+.yee-example-text:before{
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+    border-left: 1px solid #dadada;
+    border-top: 1px solid #dadada;
+}
+.yee-example-text:after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 40px;
+    height: 40px;
+    border-right: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+}
+.yee-example-title{
+}
+.yee-example-title h3{
+    color: #EEE;
+    font-size: 35px;
+    padding: 100px 0 50px;
+}
+.yee-example-slider{
+    background: #FFF;
+    width: 400px;
+    height: 400px;
+    float: left;
+    position: relative;
+}
+.yee-example-body{
+    position: relative;
+    width: 60%;
+    float: left;
+    padding-left: 150px;
+    height: 400px;
+    background: #FFF;
+}
+
+.yee-example-body:after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 40px;
+    height: 40px;
+    border-right: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+}
+.yee-example-body h4{
+    color: #ff6700;
+    font-size: 40px;
+    padding: 40px;
+}
+.yee-example-body p{
+    line-height: 2em;
+    width: 400px;
+}
+.yee-example-go{
+    margin-top: 50px;
+    text-align: center;
+}
+.yee-example-go a{
+    display: inline-block;
+    font-size: 1.4em;
+    color: #ea2127;
+    border: 1px solid #ea2127;
+    width: 120px;
+}
+#yee-example-slider{
+
+}
+#yee-example-slider li{
+    height: 400px;
+    width: 400px;
+    background: #FFF;
+}
+.yee-example-btn{
+    z-index: 10;
+    position: absolute;
+    bottom: 80px;
+    right: -120px;
+}
+#yee-example-slider-next{
+    position: absolute;
+    top:-28px;
+    right: -88px;
+}
+#yee-example-slider-prev{
+    position: absolute;
+    right: 0px;
+}
+.yee-example-slider .bx-next{
+    display: block;
+    width: 96px;
+    height: 76px;
+    background-image: url("../images/btn-right.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+.yee-example-slider .bx-next:hover{
+    background-image: url("../images/banner-slider-2.png") !important;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.yee-example-slider .bx-prev{
+    display: block;
+    width: 96px;
+    height: 76px;
+    background-image: url("../images/banner-slider-1.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+.yee-example-slider .bx-prev:hover{
+    background-image: url("../images/btn-left.png") !important;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*页面结束*/
+
+.vr-left{
+    flex-direction: column;
+    width: 20%;text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vr-right{
+    width: 90%;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    padding-top: 10px;
+}
+.vr-icon{
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+.vr-text{
+    display: block;
+    font-weight: 700;
+    font-size: 24px;
+    color: #ececec;
+}
+.skyExample{
+    background: url("../images/banner-bg-5.jpg") no-repeat;
+    background-size: cover;
+}
+.yee-skyExample{
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.3);
+}
+.skyExample-flex{
+}
+.skyExample-flex .picdesc{
+    line-height: 25px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+    color: #FFF;
+    text-align: center;
+}
+.skyExample-flex div{
+    position: relative;
+    float: left;
+    width: 20%;
+    height: 240px;
+    overflow: hidden;
+    padding: 15px;
+}
+.skyExample-flex div:hover{
+    padding: 0;
+    opacity:1;
+}
+.skyExample-flex div a{
+    box-shadow: 0 0 5px rgb(0,0,0);
+    overflow: hidden;
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.skyExample-flex img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.skyExample-flex img:hover{
+    transform: scale(1.3);
+}
+.skyExample-flex div:first-child{
+    width: 40%;
+    height: 480px;
+}
+.skyExample-flex:after{
+    clear: both;
+}
+/*about page style*/
+
+.yee-flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.yee-about{
+    width: 100%;
+    padding: 34px 0 60px;
+    overflow: hidden;
+    border-bottom: 1px solid #e3e3e3;
+}
+.yee-about-left{
+    width: 50%;
+    padding: 20px;
+}
+.yee-about-right{
+    width: 50%;
+    padding: 20px;
+}
+.yee-about-title h4{
+    font-size: 14px;
+}
+.yee-about-right .yee-about-title{
+    text-align: right;
+    padding-right: 3px;
+    border-right: 6px solid rgb(192, 80, 77);
+}
+.yee-about-left .yee-about-title{
+    text-align: left;
+    padding-left: 3px;
+    border-left: 6px solid rgb(192, 80, 77);
+}
+.yee-about h2,.yee-about h3,.yee-about h4,.yee-about h5{
+    color: rgb(192, 80, 77);
+}
+.yee-about p{
+    text-indent:2em;
+    line-height: 2em;
+    margin-top: 1em;
+}
+/*about page style end */
+
+
+/*contact page style*/
+
+.yee-contact{
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto 50px;
+}
+.yee-QRCode{
+    width: 100px;
+    height: 100px;
+}
+.yee-contact h3{
+    font-weight: normal;
+    color: #ff6700;
+    font-size: 20px;
+    padding: 60px 0;
+}
+.yee-contact-body{
+    display: flex;
+    align-items: flex-end;
+}
+.yee-contact-left{
+    width: 60%;
+    float: left;
+}
+.yee-contact-right{
+    width: 40%;
+    float: left;
+}
+.yee-contact-table{
+    font-size: 14px;
+}
+.yee-contact-table td,.yee-contact-table th{
+    padding: 8px 20px;
+}
+
+.yee-faq{
+    background: #f5f5f5;
+    padding: 140px 0 260px;
+}
+/*contact page style end*/
+
+/*
+        手机端适配CSS部分
+
+*/
+
+/*笔记本小屏优化*/
+@media screen and (max-height: 800px) and (min-width: 1025px){
+    .laser-section7 h4{
+        margin: 10px 0 0 0 ;
+    }
+    .yee-section7-right{
+        top:20px;
+    }
+    .yee-example-title h3{
+        padding: 30px 0 20px;
+    }
+    .yee-example-title h3{
+        margin: 0;
+    }
+    .yee-section5{
+        bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    /*index page style*/
+    .yee-section7-left,.yee-section7-right{
+        width: 100%;
+        position: static;
+        display: flex;
+        flex-flow:column;
+    }
+    .yee-section7-right{
+        padding-bottom: 100px;
+        display: flex;
+        flex-flow: column-reverse;
+    }
+    .yee-section7-left img, .yee-section7-right img {
+        width: 55vw;
+    }
+    .yee-section7{
+        height: auto;
+    }
+    .yee-section7 .laser-section7{
+        height: auto !important;
+    }
+    /*
+        VR案例页面
+    */
+    .vr-right {
+        width: 100%;
+    }
+    .skyExample-flex div {
+        width: 33%;
+        height: 25vh;
+        padding: 5px;
+    }
+    .skyExample-flex div:first-child {
+        width: 66%;
+        height: 50vh;
+    }
+    .skyExample-flex div:hover{
+        padding: 0;
+        opacity:1;
+    }
+    .skyExample-flex img:hover{
+        transform: scale(1);
+    }
+    /*about page*/
+    .yee-mobile-noflex{
+        display: block;
+    }
+    .yee-about-left,.yee-about-right{
+        width: 100%;
+    }
+    .yee-contact{
+        margin: 20px 0;
+    }
+    .yee-contact h3{
+        padding: 0;
+    }
+    .num-group-w h3{
+        font-size: 18px;
+    }
+    .yee-example-slider,.yee-example-body{
+        width: calc(100% + 30px);
+        margin: 0 -15px;
+    }
+    #yee-example-slider li{
+        height: 100%;
+    }
+    .yee-example-body h4{
+        font-size: 18px;
+        padding: 5px;
+    }
+    .yee-example-slider{
+        height: 60%;
+    }
+    .yee-example-body{
+        height: 30%;
+        padding-left: 10px;
+        overflow: auto;
+    }
+    .yee-example-body p{
+        width: auto;
+    }
+    .yee-example-go {
+        margin-top: 0px;
+        text-align: center;
+    }
+    .yee-example-title h3{
+        padding: 15px 0 10px;
+        font-size: 20px;
+    }
+    .yee-example-text,.yee-example-img{
+        width: auto;
+        height: 40%;
+        margin: 0 -15px;
+    }
+    .yee-example-text{
+        padding: 25px;
+        overflow: auto;
+        height: 60%;
+    }
+
+    .yee-section7-text{
+        width: auto;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .yee-pc{
+        display: none !important;
+    }
+}
+@media screen and (min-width: 769px) {
+    .yee-mobile{
+        display: none !important;
+    }
+}

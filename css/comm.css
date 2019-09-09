@@ -1,0 +1,221 @@
+.comm-div-1,
+.comm-div-2,
+.comm-div-3,
+.comm-div-4,
+.comm-div-5,
+.comm-div-6 {
+  background: url("../images/comm/bg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.comm-div-1 h1,
+.comm-div-2 h1,
+.comm-div-3 h1,
+.comm-div-4 h1,
+.comm-div-5 h1,
+.comm-div-6 h1 {
+  margin-top: 5%;
+  text-align: center;
+}
+.comm-div-5,
+.comm-div-6 {
+  background-image: none;
+}
+.div-line {
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  bottom: 20px;
+  box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.2);
+}
+.comm-div-1 {
+  padding-top: 70px;
+}
+.comm-div-1,
+.comm-div-2 {
+  background-image: url("../images/comm/bg.jpg");
+}
+.comm-div-1 h1,
+.comm-div-2 h1 {
+  margin-top: 5%;
+  text-align: center;
+}
+.comm-div-1 .bottom-bananer,
+.comm-div-2 .bottom-bananer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+}
+.comm-div-1 .bottom-bananer > img,
+.comm-div-2 .bottom-bananer > img {
+  width: 100%;
+  height: 100%;
+}
+.comm-div-1 .left,
+.comm-div-2 .left {
+  position: relative;
+  padding: 5%;
+  width: 60%;
+  float: left;
+}
+.comm-div-1 .left > img,
+.comm-div-2 .left > img {
+  position: absolute;
+  right: 25px;
+  width: 550px;
+  height: 300px;
+}
+.comm-div-1 .right,
+.comm-div-2 .right {
+  padding: 5%;
+  width: 40%;
+  float: left;
+  position: relative;
+}
+.comm-div-1 .right > div,
+.comm-div-2 .right > div {
+  text-align: center;
+  background-color: #ffffff;
+  position: relative;
+  width: 230px;
+  height: 100px;
+  border-radius: 15px;
+  border: 3px solid #2e6da4;
+  padding: 15px;
+  font-size: 24px;
+  margin-bottom: 36px;
+}
+.comm-div-1 .right > div:after,
+.comm-div-2 .right > div:after {
+  transform: translateX(-50%);
+  content: "";
+  background: url("../images/comm/down-icon.png") no-repeat;
+  background-size: 55px 30px;
+  position: absolute;
+  width: 55px;
+  height: 30px;
+  bottom: -35px;
+  left: 50%;
+}
+.comm-div-1 .right > div:last-of-type:after,
+.comm-div-2 .right > div:last-of-type:after {
+  background-image: none;
+}
+.comm-div-3 .images {
+  padding-top: 5%;
+  width: 70%;
+  float: left;
+}
+.comm-div-3 .images > img {
+  width: 33%;
+  float: left;
+}
+.comm-div-3 .images:after {
+  display: block;
+  clear: both;
+  width: 0;
+  content: "";
+}
+.comm-div-3 .first-img {
+  padding-top: 5%;
+  float: left;
+  width: 30%;
+}
+.comm-div-3 .first-img img {
+  width: 100%;
+}
+.comm-div-3 .first-img > p {
+  font-size: 20px;
+  width: 200px;
+  position: absolute;
+  left: -220px;
+}
+.comm-div-3 .content1 {
+  margin: 0 auto;
+  max-width: 600px;
+  padding-top: 5%;
+  font-size: 14px;
+  color: #7b7b7c;
+}
+.comm-div-3 .content2 {
+  margin: 0 auto;
+  font-size: 20px;
+  max-width: 600px;
+}
+.comm-div-4 .all-in-one {
+  width: 100%;
+  text-align: center;
+}
+.comm-div-4 .all-in-one img {
+  margin-top: -5%;
+}
+.comm-div-5 .table-1 {
+  width: 100%;
+  max-width: 1000px;
+  margin: 5% auto 0;
+}
+.comm-div-5 .table-1 > thead > tr {
+  border-bottom: 2px solid #EEE;
+}
+.comm-div-5 .table-1 > thead > tr > td {
+  width: 33%;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+.comm-div-5 .table-1 > tbody > tr > td {
+  width: 33%;
+  padding: 15px;
+  text-align: center;
+}
+.comm-div-5 .table-1 > tbody > tr > td > img {
+  width: 200px;
+  height: 200px;
+}
+.comm-div-5 .table-2 {
+  width: 100%;
+  background-color: #EEEEEE;
+  box-shadow: 3px 4px 20px 3px rgba(0, 0, 0, 0.2);
+}
+.comm-div-5 .table-2 tr td {
+  padding: 5px;
+  font-size: 14px;
+}
+.comm-div-6 .table-1 {
+  width: 100%;
+  max-width: 800px;
+  margin: 5% auto 0;
+}
+.comm-div-6 .table-1 td {
+  border: 2px solid #EEE;
+}
+.comm-div-6 .table-1 tr > td {
+  padding: 10px;
+  width: 25%;
+  text-align: center;
+}
+.comm-div-6 .table-1 > thead tr {
+  background: #f8f8f8;
+}
+.comm-div-6 .table-1 > thead td {
+  font-size: 25px;
+}
+.comm-div-6 .table-2 {
+  width: 100%;
+  max-width: 800px;
+  margin: 5% auto 0;
+}
+.comm-div-6 .table-2 td {
+  border: 2px solid #EEE;
+}
+.comm-div-6 .table-2 tr > td {
+  padding: 10px;
+  width: 25%;
+  text-align: center;
+}
+.comm-div-6 .table-2 td:nth-of-type(1) {
+  background: #f8f8f8;
+  font-size: 25px;
+}
